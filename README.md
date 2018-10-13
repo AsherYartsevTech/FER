@@ -13,4 +13,6 @@ run 'python3 nets/vgglike.py'
 Phase #2:
 1. run 'python3 pngs_to_randomized_joblib_4dims.py' to prepare a new joblib with the images array as a 4 dimensions array
 2. run 'python3 nets/vgglike4ensemble.py'
-3. 
+3. take latest weights file from weights that relates to the vgglike net and put it's name in the nets/ensemble.py in the right place.
+4. repeat steps 2-3 for the other architectures: dense4ensemble, convPoolCnn, allCnn, ninCnn
+5. run 'python3 nets/ensemble.py'
