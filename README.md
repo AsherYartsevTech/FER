@@ -9,3 +9,6 @@ Data Preparation:
 
 Phase #1:
 run 'python3 vgglike.py'
+
+Phase #2:
+1. run 'python3 vgglike4ensemble.py'
