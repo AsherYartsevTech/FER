@@ -8,7 +8,9 @@ Data Preparation:
 5. run 'python3 pngs_to_randomized_joblib.py'. Now you will have ~/FER/FERDataset/FER.joblib and you are ready to start training!
 
 Phase #1:
-run 'python3 vgglike.py'
+run 'python3 nets/vgglike.py'
 
 Phase #2:
-1. run 'python3 vgglike4ensemble.py'
+1. run 'python3 pngs_to_randomized_joblib_4dims.py' to prepare a new joblib with the images array as a 4 dimensions array
+2. run 'python3 nets/vgglike4ensemble.py'
+3. 
