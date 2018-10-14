@@ -1,11 +1,11 @@
 from GlobalVarsAndLibs import *
 
-def runSessStage1(execSess,bn_solver,train_dataset,train_labels,valid_dataset,valid_labels,test_dataset,test_labels,fastRun=False):
+def runSessStage1(execSess,bn_solver,train_dataset,train_labels,valid_dataset,valid_labels,test_dataset,test_labels):
     '''
     FUNCTION MUST BE EXECUTED UNDER OPEN GRAPH SESSION
     '''
     
-    epoch_n = np.floor(epochsNum/3)
+    epoch_n = np.int(np.floor(epochsNum/3))
     batch_size = 512
     N = 172254
     init = tf.global_variables_initializer()
@@ -32,7 +32,7 @@ def runSessStage1(execSess,bn_solver,train_dataset,train_labels,valid_dataset,va
     save_path = saver.save(execSess, "nets/eyesWithGunsModule/saved_weights/Stage1Model_final_weights.ckpt")
     
 
-def runSessStage2(execSess,bn_solver,train_dataset,train_labels,valid_dataset,valid_labels,test_dataset,test_labels,fastRun=False):
+def runSessStage2(execSess,bn_solver,train_dataset,train_labels,valid_dataset,valid_labels,test_dataset,test_labels):
     '''
     FUNCTION MUST BE EXECUTED UNDER OPEN GRAPH SESSION
     '''
@@ -61,7 +61,7 @@ def runSessStage2(execSess,bn_solver,train_dataset,train_labels,valid_dataset,va
         || loss_desc_on_eye2 loss:{avg_loss_desc_on_eye2:.5f}')
     save_path = saver.save(execSess, "nets/eyesWithGunsModule/saved_weights/Stage2Model_final_weights.ckpt")
 
-def runSessStage3(execSess,bn_solver,train_dataset,train_labels,valid_dataset,valid_labels,test_dataset,test_labels,fastRun=False):
+def runSessStage3(execSess,bn_solver,train_dataset,train_labels,valid_dataset,valid_labels,test_dataset,test_labels):
     '''
     FUNCTION MUST BE EXECUTED UNDER OPEN GRAPH SESSION
     '''

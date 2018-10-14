@@ -42,7 +42,7 @@ with SpicyGraph.as_default():
         runSessStage1(execSess,bn_solver,
                     train_dataset,train_labels,
                     valid_dataset,valid_labels,
-                    test_dataset,test_labels, fastRun=fastRun)
+                    test_dataset,test_labels)
         
 
         '''######## STAGE 2 #############'''
@@ -59,7 +59,7 @@ with SpicyGraph.as_default():
         runSessStage2(execSess,bn_solver,
                     train_dataset,train_labels,
                     valid_dataset,valid_labels,
-                    test_dataset,test_labels, fastRun=fastRun)        
+                    test_dataset,test_labels)        
 
         '''######## STAGE 3 #############'''
         ''' in this stage both eyes developed unique feature maps,so it makes sense to add a "brain component" 
@@ -72,7 +72,7 @@ with SpicyGraph.as_default():
         runSessStage3(execSess,bn_solver,
                     train_dataset,train_labels,
                     valid_dataset,valid_labels,
-                    test_dataset,test_labels, fastRun=fastRun)
+                    test_dataset,test_labels)
 file_writer = tf.summary.FileWriter(logdir, SpicyGraph)
 
 
