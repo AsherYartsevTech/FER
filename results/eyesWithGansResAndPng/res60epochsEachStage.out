@@ -1,0 +1,397 @@
+cpu-bind=MASK - rishon3, task  0  0 [59778]: mask 0x200000002 set
+cpu-bind=MASK - rishon3, task  0  0 [59778]: mask 0x200000002 set
+/home/asheryartsev/Project/eyesWithGans
+2018-10-13 21:48:46.433239: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2018-10-13 21:48:47.607432: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: TITAN Xp major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:0c:00.0
+totalMemory: 11.90GiB freeMemory: 11.74GiB
+2018-10-13 21:48:47.608481: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-10-13 21:48:48.367071: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-13 21:48:48.368092: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      0 
+2018-10-13 21:48:48.368982: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   N 
+2018-10-13 21:48:48.370182: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11360 MB memory) -> physical GPU (device: 0, name: TITAN Xp, pci bus id: 0000:0c:00.0, compute capability: 6.1)
+0
+get version: b'cd3c41e'
+[imageInputMaker] Training set (50238, 48, 48, 1) (50238, 7)
+[imageInputMaker] Validation set (10763, 48, 48, 1) (10763, 7)
+[imageInputMaker] Test set (10773, 48, 48, 1) (10773, 7)
+
+
+ ########## [STAGE1] TRAINING MODE  ####### 
+
+
+[Epoch 0-TRAIN] ||  eye1 loss(Acc)<validation set>: 11639.63368(14.50%)             || loss_desc_on_eye1 loss<validation set>:62449.48473
+loss_eye1<training set>: 1.86708             || loss_desc_on_eye1<training set>:0.11059
+[Epoch 1-TRAIN] ||  eye1 loss(Acc)<validation set>: 6981.96877(13.18%)             || loss_desc_on_eye1 loss<validation set>:9971.05868
+loss_eye1<training set>: 1.86839             || loss_desc_on_eye1<training set>:0.02588
+[Epoch 2-TRAIN] ||  eye1 loss(Acc)<validation set>: 169.68362(19.47%)             || loss_desc_on_eye1 loss<validation set>:4489.79419
+loss_eye1<training set>: 1.78329             || loss_desc_on_eye1<training set>:0.04515
+[Epoch 3-TRAIN] ||  eye1 loss(Acc)<validation set>: 8.15521(12.04%)             || loss_desc_on_eye1 loss<validation set>:0.05571
+loss_eye1<training set>: 1.73696             || loss_desc_on_eye1<training set>:0.03634
+[Epoch 4-TRAIN] ||  eye1 loss(Acc)<validation set>: 20.28475(14.35%)             || loss_desc_on_eye1 loss<validation set>:0.00985
+loss_eye1<training set>: 1.55311             || loss_desc_on_eye1<training set>:0.00392
+[Epoch 5-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.80932(33.80%)             || loss_desc_on_eye1 loss<validation set>:0.00089
+loss_eye1<training set>: 1.43768             || loss_desc_on_eye1<training set>:0.00715
+[Epoch 6-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.61915(34.42%)             || loss_desc_on_eye1 loss<validation set>:0.00100
+loss_eye1<training set>: 1.37385             || loss_desc_on_eye1<training set>:0.00355
+[Epoch 7-TRAIN] ||  eye1 loss(Acc)<validation set>: 2.14768(26.87%)             || loss_desc_on_eye1 loss<validation set>:0.00286
+loss_eye1<training set>: 1.23679             || loss_desc_on_eye1<training set>:0.00240
+[Epoch 8-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.65124(38.95%)             || loss_desc_on_eye1 loss<validation set>:0.00108
+loss_eye1<training set>: 1.14560             || loss_desc_on_eye1<training set>:0.00007
+[Epoch 9-TRAIN] ||  eye1 loss(Acc)<validation set>: 2.04747(43.96%)             || loss_desc_on_eye1 loss<validation set>:0.00008
+loss_eye1<training set>: 1.12032             || loss_desc_on_eye1<training set>:0.00099
+[Epoch 10-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.34470(54.85%)             || loss_desc_on_eye1 loss<validation set>:0.00098
+loss_eye1<training set>: 1.14116             || loss_desc_on_eye1<training set>:0.00008
+[Epoch 11-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.29991(56.12%)             || loss_desc_on_eye1 loss<validation set>:0.00027
+loss_eye1<training set>: 1.06612             || loss_desc_on_eye1<training set>:0.00079
+[Epoch 12-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.31336(57.18%)             || loss_desc_on_eye1 loss<validation set>:0.00036
+loss_eye1<training set>: 1.04065             || loss_desc_on_eye1<training set>:0.00012
+[Epoch 13-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.46097(52.83%)             || loss_desc_on_eye1 loss<validation set>:0.00110
+loss_eye1<training set>: 1.01715             || loss_desc_on_eye1<training set>:0.00230
+[Epoch 14-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.27381(58.34%)             || loss_desc_on_eye1 loss<validation set>:0.00120
+loss_eye1<training set>: 0.98106             || loss_desc_on_eye1<training set>:0.00240
+[Epoch 15-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.47030(57.61%)             || loss_desc_on_eye1 loss<validation set>:0.00116
+loss_eye1<training set>: 0.96440             || loss_desc_on_eye1<training set>:0.00236
+[Epoch 16-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.36764(58.85%)             || loss_desc_on_eye1 loss<validation set>:0.00116
+loss_eye1<training set>: 0.85878             || loss_desc_on_eye1<training set>:0.00236
+[Epoch 17-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.38336(57.78%)             || loss_desc_on_eye1 loss<validation set>:0.00117
+loss_eye1<training set>: 0.90402             || loss_desc_on_eye1<training set>:0.00012
+[Epoch 18-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.29332(61.10%)             || loss_desc_on_eye1 loss<validation set>:0.00121
+loss_eye1<training set>: 0.85921             || loss_desc_on_eye1<training set>:0.00009
+[Epoch 19-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.18758(62.79%)             || loss_desc_on_eye1 loss<validation set>:0.00091
+loss_eye1<training set>: 0.84710             || loss_desc_on_eye1<training set>:0.00179
+[Epoch 20-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.62012(56.94%)             || loss_desc_on_eye1 loss<validation set>:0.00172
+loss_eye1<training set>: 0.82080             || loss_desc_on_eye1<training set>:0.00049
+[Epoch 21-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.27599(61.07%)             || loss_desc_on_eye1 loss<validation set>:0.00031
+loss_eye1<training set>: 0.79516             || loss_desc_on_eye1<training set>:0.00109
+[Epoch 22-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.30527(62.94%)             || loss_desc_on_eye1 loss<validation set>:0.00121
+loss_eye1<training set>: 0.78028             || loss_desc_on_eye1<training set>:0.00009
+[Epoch 23-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.53995(59.64%)             || loss_desc_on_eye1 loss<validation set>:0.00127
+loss_eye1<training set>: 0.79604             || loss_desc_on_eye1<training set>:0.00009
+[Epoch 24-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.34781(62.30%)             || loss_desc_on_eye1 loss<validation set>:0.00067
+loss_eye1<training set>: 0.75815             || loss_desc_on_eye1<training set>:0.00002
+[Epoch 25-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.25191(62.68%)             || loss_desc_on_eye1 loss<validation set>:0.00060
+loss_eye1<training set>: 0.70364             || loss_desc_on_eye1<training set>:0.00010
+[Epoch 26-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.38753(61.24%)             || loss_desc_on_eye1 loss<validation set>:0.00060
+loss_eye1<training set>: 0.73809             || loss_desc_on_eye1<training set>:0.00010
+[Epoch 27-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.55878(57.37%)             || loss_desc_on_eye1 loss<validation set>:0.00061
+loss_eye1<training set>: 0.71097             || loss_desc_on_eye1<training set>:0.00014
+[Epoch 28-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.36930(61.75%)             || loss_desc_on_eye1 loss<validation set>:0.00010
+loss_eye1<training set>: 0.68532             || loss_desc_on_eye1<training set>:0.00026
+[Epoch 29-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.29405(63.28%)             || loss_desc_on_eye1 loss<validation set>:0.00144
+loss_eye1<training set>: 0.64695             || loss_desc_on_eye1<training set>:0.00189
+[Epoch 30-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.29124(64.50%)             || loss_desc_on_eye1 loss<validation set>:0.00144
+loss_eye1<training set>: 0.60625             || loss_desc_on_eye1<training set>:0.00125
+[Epoch 31-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.43320(61.54%)             || loss_desc_on_eye1 loss<validation set>:0.00053
+loss_eye1<training set>: 0.62811             || loss_desc_on_eye1<training set>:0.00019
+[Epoch 32-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.45170(62.19%)             || loss_desc_on_eye1 loss<validation set>:0.00090
+loss_eye1<training set>: 0.57400             || loss_desc_on_eye1<training set>:0.00139
+[Epoch 33-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.30757(63.43%)             || loss_desc_on_eye1 loss<validation set>:0.00085
+loss_eye1<training set>: 0.65858             || loss_desc_on_eye1<training set>:0.00143
+[Epoch 34-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.43581(64.86%)             || loss_desc_on_eye1 loss<validation set>:0.00055
+loss_eye1<training set>: 0.57890             || loss_desc_on_eye1<training set>:0.00121
+[Epoch 35-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.19009(65.21%)             || loss_desc_on_eye1 loss<validation set>:0.00139
+loss_eye1<training set>: 0.63237             || loss_desc_on_eye1<training set>:0.00006
+[Epoch 36-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.32386(65.39%)             || loss_desc_on_eye1 loss<validation set>:0.00008
+loss_eye1<training set>: 0.57562             || loss_desc_on_eye1<training set>:0.00060
+[Epoch 37-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.30271(65.77%)             || loss_desc_on_eye1 loss<validation set>:0.00045
+loss_eye1<training set>: 0.54329             || loss_desc_on_eye1<training set>:0.00105
+[Epoch 38-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.41461(63.18%)             || loss_desc_on_eye1 loss<validation set>:0.00072
+loss_eye1<training set>: 0.53555             || loss_desc_on_eye1<training set>:0.00080
+[Epoch 39-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.36708(64.46%)             || loss_desc_on_eye1 loss<validation set>:0.00135
+loss_eye1<training set>: 0.49420             || loss_desc_on_eye1<training set>:0.00082
+[Epoch 40-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.32917(66.08%)             || loss_desc_on_eye1 loss<validation set>:0.00090
+loss_eye1<training set>: 0.56361             || loss_desc_on_eye1<training set>:0.00166
+[Epoch 41-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.39846(63.76%)             || loss_desc_on_eye1 loss<validation set>:0.00138
+loss_eye1<training set>: 0.50868             || loss_desc_on_eye1<training set>:0.00005
+[Epoch 42-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.33391(66.35%)             || loss_desc_on_eye1 loss<validation set>:0.00154
+loss_eye1<training set>: 0.52239             || loss_desc_on_eye1<training set>:0.00201
+[Epoch 43-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.29922(66.10%)             || loss_desc_on_eye1 loss<validation set>:0.00125
+loss_eye1<training set>: 0.45970             || loss_desc_on_eye1<training set>:0.00073
+[Epoch 44-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.22710(67.82%)             || loss_desc_on_eye1 loss<validation set>:0.00268
+loss_eye1<training set>: 0.51498             || loss_desc_on_eye1<training set>:0.00002
+[Epoch 45-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.30315(66.01%)             || loss_desc_on_eye1 loss<validation set>:0.00084
+loss_eye1<training set>: 0.50411             || loss_desc_on_eye1<training set>:0.00023
+[Epoch 46-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.25405(66.82%)             || loss_desc_on_eye1 loss<validation set>:0.00055
+loss_eye1<training set>: 0.47764             || loss_desc_on_eye1<training set>:0.00058
+[Epoch 47-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.21294(67.51%)             || loss_desc_on_eye1 loss<validation set>:0.00095
+loss_eye1<training set>: 0.42209             || loss_desc_on_eye1<training set>:0.00061
+[Epoch 48-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.30768(67.09%)             || loss_desc_on_eye1 loss<validation set>:0.00129
+loss_eye1<training set>: 0.41851             || loss_desc_on_eye1<training set>:0.00129
+[Epoch 49-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.37767(65.62%)             || loss_desc_on_eye1 loss<validation set>:0.00141
+loss_eye1<training set>: 0.45731             || loss_desc_on_eye1<training set>:0.00028
+[Epoch 50-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.31465(66.46%)             || loss_desc_on_eye1 loss<validation set>:0.00109
+loss_eye1<training set>: 0.48899             || loss_desc_on_eye1<training set>:0.00137
+[Epoch 51-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.22172(67.56%)             || loss_desc_on_eye1 loss<validation set>:0.00086
+loss_eye1<training set>: 0.42001             || loss_desc_on_eye1<training set>:0.00009
+[Epoch 52-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.25914(68.10%)             || loss_desc_on_eye1 loss<validation set>:0.00037
+loss_eye1<training set>: 0.41432             || loss_desc_on_eye1<training set>:0.00122
+[Epoch 53-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.21558(67.64%)             || loss_desc_on_eye1 loss<validation set>:0.00095
+loss_eye1<training set>: 0.40659             || loss_desc_on_eye1<training set>:0.00147
+[Epoch 54-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.21795(68.81%)             || loss_desc_on_eye1 loss<validation set>:0.00202
+loss_eye1<training set>: 0.43312             || loss_desc_on_eye1<training set>:0.00131
+[Epoch 55-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.38008(66.56%)             || loss_desc_on_eye1 loss<validation set>:0.00148
+loss_eye1<training set>: 0.45641             || loss_desc_on_eye1<training set>:0.00174
+[Epoch 56-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.38942(68.16%)             || loss_desc_on_eye1 loss<validation set>:0.00161
+loss_eye1<training set>: 0.38394             || loss_desc_on_eye1<training set>:0.00129
+[Epoch 57-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.34000(67.42%)             || loss_desc_on_eye1 loss<validation set>:0.00065
+loss_eye1<training set>: 0.36450             || loss_desc_on_eye1<training set>:0.00014
+[Epoch 58-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.27898(68.39%)             || loss_desc_on_eye1 loss<validation set>:0.00074
+loss_eye1<training set>: 0.41659             || loss_desc_on_eye1<training set>:0.00014
+[Epoch 59-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.27451(68.15%)             || loss_desc_on_eye1 loss<validation set>:0.00171
+loss_eye1<training set>: 0.37300             || loss_desc_on_eye1<training set>:0.00048
+
+
+ ########## [STAGE2] TRAINING MODE  ####### 
+
+
+[Epoch 0-TRAIN] ||  eye1 loss(Acc): 878.76045(16.75%)             || loss_desc_on_eye1 loss:20.41972
+[Epoch 0-TRAIN] ||  eye2 loss(Acc): 248.86841(24.50%)             || loss_desc_on_eye2 loss:19.66232
+[Epoch 1-TRAIN] ||  eye1 loss(Acc): 17.26687(33.92%)             || loss_desc_on_eye1 loss:0.04721
+[Epoch 1-TRAIN] ||  eye2 loss(Acc): 4662.76185(13.22%)             || loss_desc_on_eye2 loss:103.03558
+[Epoch 2-TRAIN] ||  eye1 loss(Acc): 3.74893(56.07%)             || loss_desc_on_eye1 loss:0.00028
+[Epoch 2-TRAIN] ||  eye2 loss(Acc): 16.19745(20.50%)             || loss_desc_on_eye2 loss:0.56949
+[Epoch 3-TRAIN] ||  eye1 loss(Acc): 1.93014(63.94%)             || loss_desc_on_eye1 loss:0.00024
+[Epoch 3-TRAIN] ||  eye2 loss(Acc): 3.05008(14.59%)             || loss_desc_on_eye2 loss:0.00737
+[Epoch 4-TRAIN] ||  eye1 loss(Acc): 1.48431(67.38%)             || loss_desc_on_eye1 loss:0.00021
+[Epoch 4-TRAIN] ||  eye2 loss(Acc): 2.13918(23.86%)             || loss_desc_on_eye2 loss:0.00104
+[Epoch 5-TRAIN] ||  eye1 loss(Acc): 1.38102(68.04%)             || loss_desc_on_eye1 loss:0.00078
+[Epoch 5-TRAIN] ||  eye2 loss(Acc): 8.42690(18.93%)             || loss_desc_on_eye2 loss:0.00240
+[Epoch 6-TRAIN] ||  eye1 loss(Acc): 1.40120(67.79%)             || loss_desc_on_eye1 loss:0.00084
+[Epoch 6-TRAIN] ||  eye2 loss(Acc): 3.11357(32.61%)             || loss_desc_on_eye2 loss:0.00101
+[Epoch 7-TRAIN] ||  eye1 loss(Acc): 1.33965(68.42%)             || loss_desc_on_eye1 loss:0.00021
+[Epoch 7-TRAIN] ||  eye2 loss(Acc): 1.51373(47.43%)             || loss_desc_on_eye2 loss:0.00146
+[Epoch 8-TRAIN] ||  eye1 loss(Acc): 1.30867(70.17%)             || loss_desc_on_eye1 loss:0.00074
+[Epoch 8-TRAIN] ||  eye2 loss(Acc): 1.43514(44.70%)             || loss_desc_on_eye2 loss:0.00103
+[Epoch 9-TRAIN] ||  eye1 loss(Acc): 1.26920(69.77%)             || loss_desc_on_eye1 loss:0.00032
+[Epoch 9-TRAIN] ||  eye2 loss(Acc): 1.34962(50.07%)             || loss_desc_on_eye2 loss:0.00009
+[Epoch 10-TRAIN] ||  eye1 loss(Acc): 1.30880(68.12%)             || loss_desc_on_eye1 loss:0.00059
+[Epoch 10-TRAIN] ||  eye2 loss(Acc): 1.38709(47.59%)             || loss_desc_on_eye2 loss:0.00040
+[Epoch 11-TRAIN] ||  eye1 loss(Acc): 1.37447(69.13%)             || loss_desc_on_eye1 loss:0.00011
+[Epoch 11-TRAIN] ||  eye2 loss(Acc): 1.21173(55.57%)             || loss_desc_on_eye2 loss:0.00077
+[Epoch 12-TRAIN] ||  eye1 loss(Acc): 1.25681(70.14%)             || loss_desc_on_eye1 loss:0.00004
+[Epoch 12-TRAIN] ||  eye2 loss(Acc): 1.28025(53.60%)             || loss_desc_on_eye2 loss:0.00105
+[Epoch 13-TRAIN] ||  eye1 loss(Acc): 1.23779(70.48%)             || loss_desc_on_eye1 loss:0.00060
+[Epoch 13-TRAIN] ||  eye2 loss(Acc): 1.16068(58.44%)             || loss_desc_on_eye2 loss:0.00007
+[Epoch 14-TRAIN] ||  eye1 loss(Acc): 1.25814(70.31%)             || loss_desc_on_eye1 loss:0.00101
+[Epoch 14-TRAIN] ||  eye2 loss(Acc): 1.23244(55.24%)             || loss_desc_on_eye2 loss:0.00103
+[Epoch 15-TRAIN] ||  eye1 loss(Acc): 1.26065(70.04%)             || loss_desc_on_eye1 loss:0.00101
+[Epoch 15-TRAIN] ||  eye2 loss(Acc): 1.11312(60.39%)             || loss_desc_on_eye2 loss:0.00010
+[Epoch 16-TRAIN] ||  eye1 loss(Acc): 1.27152(69.81%)             || loss_desc_on_eye1 loss:0.00101
+[Epoch 16-TRAIN] ||  eye2 loss(Acc): 1.17383(57.16%)             || loss_desc_on_eye2 loss:0.00102
+[Epoch 17-TRAIN] ||  eye1 loss(Acc): 1.25668(69.35%)             || loss_desc_on_eye1 loss:0.00094
+[Epoch 17-TRAIN] ||  eye2 loss(Acc): 1.18403(58.40%)             || loss_desc_on_eye2 loss:0.00031
+[Epoch 18-TRAIN] ||  eye1 loss(Acc): 1.23522(71.17%)             || loss_desc_on_eye1 loss:0.00094
+[Epoch 18-TRAIN] ||  eye2 loss(Acc): 1.09356(62.76%)             || loss_desc_on_eye2 loss:0.00101
+[Epoch 19-TRAIN] ||  eye1 loss(Acc): 1.29316(70.06%)             || loss_desc_on_eye1 loss:0.00095
+[Epoch 19-TRAIN] ||  eye2 loss(Acc): 1.07641(61.86%)             || loss_desc_on_eye2 loss:0.00100
+[Epoch 20-TRAIN] ||  eye1 loss(Acc): 1.35336(69.68%)             || loss_desc_on_eye1 loss:0.00095
+[Epoch 20-TRAIN] ||  eye2 loss(Acc): 1.06100(62.13%)             || loss_desc_on_eye2 loss:0.00099
+[Epoch 21-TRAIN] ||  eye1 loss(Acc): 1.28960(69.85%)             || loss_desc_on_eye1 loss:0.00096
+[Epoch 21-TRAIN] ||  eye2 loss(Acc): 1.04929(62.29%)             || loss_desc_on_eye2 loss:0.00098
+[Epoch 22-TRAIN] ||  eye1 loss(Acc): 1.22715(70.59%)             || loss_desc_on_eye1 loss:0.00091
+[Epoch 22-TRAIN] ||  eye2 loss(Acc): 1.02319(63.40%)             || loss_desc_on_eye2 loss:0.00102
+[Epoch 23-TRAIN] ||  eye1 loss(Acc): 1.45370(68.06%)             || loss_desc_on_eye1 loss:0.00090
+[Epoch 23-TRAIN] ||  eye2 loss(Acc): 1.09425(63.28%)             || loss_desc_on_eye2 loss:0.00101
+[Epoch 24-TRAIN] ||  eye1 loss(Acc): 1.34610(70.10%)             || loss_desc_on_eye1 loss:0.00087
+[Epoch 24-TRAIN] ||  eye2 loss(Acc): 1.09932(63.25%)             || loss_desc_on_eye2 loss:0.00098
+[Epoch 25-TRAIN] ||  eye1 loss(Acc): 1.30932(70.16%)             || loss_desc_on_eye1 loss:0.00085
+[Epoch 25-TRAIN] ||  eye2 loss(Acc): 1.08263(61.97%)             || loss_desc_on_eye2 loss:0.00098
+[Epoch 26-TRAIN] ||  eye1 loss(Acc): 1.37444(68.55%)             || loss_desc_on_eye1 loss:0.00085
+[Epoch 26-TRAIN] ||  eye2 loss(Acc): 1.13352(62.30%)             || loss_desc_on_eye2 loss:0.00102
+[Epoch 27-TRAIN] ||  eye1 loss(Acc): 1.36682(70.23%)             || loss_desc_on_eye1 loss:0.00079
+[Epoch 27-TRAIN] ||  eye2 loss(Acc): 1.07692(63.65%)             || loss_desc_on_eye2 loss:0.00170
+[Epoch 28-TRAIN] ||  eye1 loss(Acc): 1.33338(68.96%)             || loss_desc_on_eye1 loss:0.00081
+[Epoch 28-TRAIN] ||  eye2 loss(Acc): 1.03776(65.68%)             || loss_desc_on_eye2 loss:0.00029
+[Epoch 29-TRAIN] ||  eye1 loss(Acc): 1.35352(69.53%)             || loss_desc_on_eye1 loss:0.00115
+[Epoch 29-TRAIN] ||  eye2 loss(Acc): 1.11358(63.95%)             || loss_desc_on_eye2 loss:0.00381
+[Epoch 30-TRAIN] ||  eye1 loss(Acc): 1.25289(69.19%)             || loss_desc_on_eye1 loss:0.00067
+[Epoch 30-TRAIN] ||  eye2 loss(Acc): 1.14424(62.33%)             || loss_desc_on_eye2 loss:0.00037
+[Epoch 31-TRAIN] ||  eye1 loss(Acc): 1.22264(70.22%)             || loss_desc_on_eye1 loss:0.00274
+[Epoch 31-TRAIN] ||  eye2 loss(Acc): 1.06939(65.37%)             || loss_desc_on_eye2 loss:0.00151
+[Epoch 32-TRAIN] ||  eye1 loss(Acc): 1.29300(69.31%)             || loss_desc_on_eye1 loss:0.00027
+[Epoch 32-TRAIN] ||  eye2 loss(Acc): 1.14531(64.06%)             || loss_desc_on_eye2 loss:0.00010
+[Epoch 33-TRAIN] ||  eye1 loss(Acc): 1.35176(70.32%)             || loss_desc_on_eye1 loss:0.00027
+[Epoch 33-TRAIN] ||  eye2 loss(Acc): 1.13765(62.84%)             || loss_desc_on_eye2 loss:0.00394
+[Epoch 34-TRAIN] ||  eye1 loss(Acc): 1.45800(69.86%)             || loss_desc_on_eye1 loss:0.00029
+[Epoch 34-TRAIN] ||  eye2 loss(Acc): 1.18396(62.96%)             || loss_desc_on_eye2 loss:0.00022
+[Epoch 35-TRAIN] ||  eye1 loss(Acc): 1.37605(70.09%)             || loss_desc_on_eye1 loss:0.00030
+[Epoch 35-TRAIN] ||  eye2 loss(Acc): 1.16543(62.41%)             || loss_desc_on_eye2 loss:0.00101
+[Epoch 36-TRAIN] ||  eye1 loss(Acc): 1.29910(70.14%)             || loss_desc_on_eye1 loss:0.00036
+[Epoch 36-TRAIN] ||  eye2 loss(Acc): 1.14589(63.50%)             || loss_desc_on_eye2 loss:0.00045
+[Epoch 37-TRAIN] ||  eye1 loss(Acc): 1.27637(70.51%)             || loss_desc_on_eye1 loss:0.00040
+[Epoch 37-TRAIN] ||  eye2 loss(Acc): 1.10073(65.17%)             || loss_desc_on_eye2 loss:0.00157
+[Epoch 38-TRAIN] ||  eye1 loss(Acc): 1.36714(69.24%)             || loss_desc_on_eye1 loss:0.00100
+[Epoch 38-TRAIN] ||  eye2 loss(Acc): 1.19849(63.38%)             || loss_desc_on_eye2 loss:0.00044
+[Epoch 39-TRAIN] ||  eye1 loss(Acc): 1.27107(71.16%)             || loss_desc_on_eye1 loss:0.00079
+[Epoch 39-TRAIN] ||  eye2 loss(Acc): 1.24288(61.70%)             || loss_desc_on_eye2 loss:0.00225
+[Epoch 40-TRAIN] ||  eye1 loss(Acc): 1.32902(69.55%)             || loss_desc_on_eye1 loss:0.00070
+[Epoch 40-TRAIN] ||  eye2 loss(Acc): 1.30820(62.32%)             || loss_desc_on_eye2 loss:0.00225
+[Epoch 41-TRAIN] ||  eye1 loss(Acc): 1.32448(72.09%)             || loss_desc_on_eye1 loss:0.00064
+[Epoch 41-TRAIN] ||  eye2 loss(Acc): 1.17085(65.30%)             || loss_desc_on_eye2 loss:0.00233
+[Epoch 42-TRAIN] ||  eye1 loss(Acc): 1.39480(70.80%)             || loss_desc_on_eye1 loss:0.00101
+[Epoch 42-TRAIN] ||  eye2 loss(Acc): 1.13906(64.95%)             || loss_desc_on_eye2 loss:0.00230
+[Epoch 43-TRAIN] ||  eye1 loss(Acc): 1.32882(70.38%)             || loss_desc_on_eye1 loss:0.00125
+[Epoch 43-TRAIN] ||  eye2 loss(Acc): 1.21834(63.34%)             || loss_desc_on_eye2 loss:0.00221
+[Epoch 44-TRAIN] ||  eye1 loss(Acc): 1.42846(68.90%)             || loss_desc_on_eye1 loss:0.00117
+[Epoch 44-TRAIN] ||  eye2 loss(Acc): 1.15484(65.71%)             || loss_desc_on_eye2 loss:0.00225
+[Epoch 45-TRAIN] ||  eye1 loss(Acc): 1.39657(70.01%)             || loss_desc_on_eye1 loss:0.00088
+[Epoch 45-TRAIN] ||  eye2 loss(Acc): 1.16295(65.27%)             || loss_desc_on_eye2 loss:0.00226
+[Epoch 46-TRAIN] ||  eye1 loss(Acc): 1.38404(68.87%)             || loss_desc_on_eye1 loss:0.00094
+[Epoch 46-TRAIN] ||  eye2 loss(Acc): 1.06649(66.37%)             || loss_desc_on_eye2 loss:0.00221
+[Epoch 47-TRAIN] ||  eye1 loss(Acc): 1.28208(69.38%)             || loss_desc_on_eye1 loss:0.00177
+[Epoch 47-TRAIN] ||  eye2 loss(Acc): 1.15107(65.12%)             || loss_desc_on_eye2 loss:0.00227
+[Epoch 48-TRAIN] ||  eye1 loss(Acc): 1.37483(69.93%)             || loss_desc_on_eye1 loss:0.00177
+[Epoch 48-TRAIN] ||  eye2 loss(Acc): 1.17412(65.88%)             || loss_desc_on_eye2 loss:0.00223
+[Epoch 49-TRAIN] ||  eye1 loss(Acc): 1.34650(70.87%)             || loss_desc_on_eye1 loss:0.00178
+[Epoch 49-TRAIN] ||  eye2 loss(Acc): 1.14413(65.59%)             || loss_desc_on_eye2 loss:0.00221
+[Epoch 50-TRAIN] ||  eye1 loss(Acc): 1.40979(69.84%)             || loss_desc_on_eye1 loss:0.00086
+[Epoch 50-TRAIN] ||  eye2 loss(Acc): 1.18658(64.88%)             || loss_desc_on_eye2 loss:0.00221
+[Epoch 51-TRAIN] ||  eye1 loss(Acc): 1.42290(69.72%)             || loss_desc_on_eye1 loss:0.00072
+[Epoch 51-TRAIN] ||  eye2 loss(Acc): 1.21950(64.45%)             || loss_desc_on_eye2 loss:0.00221
+[Epoch 52-TRAIN] ||  eye1 loss(Acc): 1.39134(69.45%)             || loss_desc_on_eye1 loss:0.00173
+[Epoch 52-TRAIN] ||  eye2 loss(Acc): 1.18506(66.09%)             || loss_desc_on_eye2 loss:0.00225
+[Epoch 53-TRAIN] ||  eye1 loss(Acc): 1.32419(71.19%)             || loss_desc_on_eye1 loss:0.00120
+[Epoch 53-TRAIN] ||  eye2 loss(Acc): 1.10087(67.44%)             || loss_desc_on_eye2 loss:0.00225
+[Epoch 54-TRAIN] ||  eye1 loss(Acc): 1.30732(70.32%)             || loss_desc_on_eye1 loss:0.00163
+[Epoch 54-TRAIN] ||  eye2 loss(Acc): 1.22780(64.06%)             || loss_desc_on_eye2 loss:0.00225
+[Epoch 55-TRAIN] ||  eye1 loss(Acc): 1.33780(71.04%)             || loss_desc_on_eye1 loss:0.00170
+[Epoch 55-TRAIN] ||  eye2 loss(Acc): 1.12952(66.60%)             || loss_desc_on_eye2 loss:0.00229
+[Epoch 56-TRAIN] ||  eye1 loss(Acc): 1.22904(71.37%)             || loss_desc_on_eye1 loss:0.00104
+[Epoch 56-TRAIN] ||  eye2 loss(Acc): 1.13477(66.50%)             || loss_desc_on_eye2 loss:0.00229
+[Epoch 57-TRAIN] ||  eye1 loss(Acc): 1.37247(71.73%)             || loss_desc_on_eye1 loss:0.00059
+[Epoch 57-TRAIN] ||  eye2 loss(Acc): 1.26139(64.92%)             || loss_desc_on_eye2 loss:0.00229
+[Epoch 58-TRAIN] ||  eye1 loss(Acc): 1.42256(70.26%)             || loss_desc_on_eye1 loss:0.00158
+[Epoch 58-TRAIN] ||  eye2 loss(Acc): 1.24339(65.01%)             || loss_desc_on_eye2 loss:0.00229
+[Epoch 59-TRAIN] ||  eye1 loss(Acc): 1.43073(69.79%)             || loss_desc_on_eye1 loss:0.00123
+[Epoch 59-TRAIN] ||  eye2 loss(Acc): 1.21115(66.60%)             || loss_desc_on_eye2 loss:0.00229
+
+
+ ########## [STAGE3] TRAINING MODE  ####### 
+
+
+[Epoch 0-TRAIN] STATS:
+brain loss(Acc): 1832.94346(16.55%),             eye1 loss(Acc): 460.57772(16.70%),             eye2 loss(Acc): 1031.16577(21.74%)              weighted loss(Acc): 1108.20476(18.19%)
+[Epoch 1-TRAIN] STATS:
+brain loss(Acc): 57.37261(37.51%),             eye1 loss(Acc): 16.23681(32.59%),             eye2 loss(Acc): 24.31675(32.38%)              weighted loss(Acc): 34.37946(38.16%)
+[Epoch 2-TRAIN] STATS:
+brain loss(Acc): 11.25037(51.50%),             eye1 loss(Acc): 3.96861(49.38%),             eye2 loss(Acc): 5.05486(47.52%)              weighted loss(Acc): 7.18776(52.28%)
+[Epoch 3-TRAIN] STATS:
+brain loss(Acc): 4.94471(61.34%),             eye1 loss(Acc): 2.26067(59.49%),             eye2 loss(Acc): 2.04015(55.77%)              weighted loss(Acc): 3.26368(61.80%)
+[Epoch 4-TRAIN] STATS:
+brain loss(Acc): 3.51863(66.86%),             eye1 loss(Acc): 1.70017(66.06%),             eye2 loss(Acc): 1.76101(60.17%)              weighted loss(Acc): 2.42380(67.15%)
+[Epoch 5-TRAIN] STATS:
+brain loss(Acc): 3.13295(67.80%),             eye1 loss(Acc): 1.68998(67.59%),             eye2 loss(Acc): 1.90001(59.10%)              weighted loss(Acc): 2.20827(68.40%)
+[Epoch 6-TRAIN] STATS:
+brain loss(Acc): 2.68281(69.75%),             eye1 loss(Acc): 1.48792(69.09%),             eye2 loss(Acc): 1.61154(60.44%)              weighted loss(Acc): 1.93120(69.66%)
+[Epoch 7-TRAIN] STATS:
+brain loss(Acc): 2.62043(68.94%),             eye1 loss(Acc): 1.51434(69.23%),             eye2 loss(Acc): 1.67873(61.02%)              weighted loss(Acc): 1.92532(69.40%)
+[Epoch 8-TRAIN] STATS:
+brain loss(Acc): 2.62418(68.81%),             eye1 loss(Acc): 1.40374(69.80%),             eye2 loss(Acc): 2.04405(57.46%)              weighted loss(Acc): 1.91699(69.18%)
+[Epoch 9-TRAIN] STATS:
+brain loss(Acc): 2.54606(68.67%),             eye1 loss(Acc): 1.45438(67.32%),             eye2 loss(Acc): 1.70334(61.38%)              weighted loss(Acc): 1.86814(68.84%)
+[Epoch 10-TRAIN] STATS:
+brain loss(Acc): 2.57037(69.30%),             eye1 loss(Acc): 1.47334(69.64%),             eye2 loss(Acc): 1.72560(62.09%)              weighted loss(Acc): 1.88657(69.59%)
+[Epoch 11-TRAIN] STATS:
+brain loss(Acc): 2.67672(66.78%),             eye1 loss(Acc): 1.53239(65.74%),             eye2 loss(Acc): 1.67912(62.53%)              weighted loss(Acc): 1.96272(67.12%)
+[Epoch 12-TRAIN] STATS:
+brain loss(Acc): 2.37066(69.41%),             eye1 loss(Acc): 1.42111(69.30%),             eye2 loss(Acc): 1.54707(63.12%)              weighted loss(Acc): 1.75681(70.07%)
+[Epoch 13-TRAIN] STATS:
+brain loss(Acc): 2.47820(67.34%),             eye1 loss(Acc): 1.45153(69.05%),             eye2 loss(Acc): 1.92058(59.39%)              weighted loss(Acc): 1.85329(68.03%)
+[Epoch 14-TRAIN] STATS:
+brain loss(Acc): 2.41088(69.01%),             eye1 loss(Acc): 1.53071(67.81%),             eye2 loss(Acc): 1.63174(64.04%)              weighted loss(Acc): 1.83452(69.12%)
+[Epoch 15-TRAIN] STATS:
+brain loss(Acc): 2.45559(69.15%),             eye1 loss(Acc): 1.45648(69.10%),             eye2 loss(Acc): 1.74501(60.28%)              weighted loss(Acc): 1.81507(69.60%)
+[Epoch 16-TRAIN] STATS:
+brain loss(Acc): 2.45554(70.94%),             eye1 loss(Acc): 1.41113(70.44%),             eye2 loss(Acc): 1.65858(65.00%)              weighted loss(Acc): 1.82669(71.12%)
+[Epoch 17-TRAIN] STATS:
+brain loss(Acc): 2.44978(69.76%),             eye1 loss(Acc): 1.42158(70.13%),             eye2 loss(Acc): 1.66444(63.57%)              weighted loss(Acc): 1.81291(70.07%)
+[Epoch 18-TRAIN] STATS:
+brain loss(Acc): 2.37730(69.25%),             eye1 loss(Acc): 1.50579(68.51%),             eye2 loss(Acc): 1.62789(64.40%)              weighted loss(Acc): 1.79517(69.67%)
+[Epoch 19-TRAIN] STATS:
+brain loss(Acc): 2.33957(69.51%),             eye1 loss(Acc): 1.45913(68.52%),             eye2 loss(Acc): 1.61192(63.83%)              weighted loss(Acc): 1.75727(69.80%)
+[Epoch 20-TRAIN] STATS:
+brain loss(Acc): 2.32750(70.53%),             eye1 loss(Acc): 1.42262(69.81%),             eye2 loss(Acc): 1.44996(64.69%)              weighted loss(Acc): 1.72259(71.15%)
+[Epoch 21-TRAIN] STATS:
+brain loss(Acc): 2.38749(71.21%),             eye1 loss(Acc): 1.45506(70.00%),             eye2 loss(Acc): 1.45794(66.68%)              weighted loss(Acc): 1.76061(71.30%)
+[Epoch 22-TRAIN] STATS:
+brain loss(Acc): 2.42406(69.94%),             eye1 loss(Acc): 1.53433(68.74%),             eye2 loss(Acc): 1.51899(65.85%)              weighted loss(Acc): 1.82648(70.32%)
+[Epoch 23-TRAIN] STATS:
+brain loss(Acc): 2.33417(70.79%),             eye1 loss(Acc): 1.55970(69.41%),             eye2 loss(Acc): 1.57013(65.73%)              weighted loss(Acc): 1.77966(71.16%)
+[Epoch 24-TRAIN] STATS:
+brain loss(Acc): 2.44080(69.59%),             eye1 loss(Acc): 1.53383(68.65%),             eye2 loss(Acc): 1.58083(65.74%)              weighted loss(Acc): 1.84138(70.16%)
+[Epoch 25-TRAIN] STATS:
+brain loss(Acc): 2.19935(71.84%),             eye1 loss(Acc): 1.55341(68.57%),             eye2 loss(Acc): 1.41892(68.14%)              weighted loss(Acc): 1.68948(72.02%)
+[Epoch 26-TRAIN] STATS:
+brain loss(Acc): 2.18567(71.39%),             eye1 loss(Acc): 1.47520(69.40%),             eye2 loss(Acc): 1.48715(67.65%)              weighted loss(Acc): 1.68006(71.83%)
+[Epoch 27-TRAIN] STATS:
+brain loss(Acc): 2.24878(70.32%),             eye1 loss(Acc): 1.46330(69.02%),             eye2 loss(Acc): 1.52415(67.08%)              weighted loss(Acc): 1.71402(70.72%)
+[Epoch 28-TRAIN] STATS:
+brain loss(Acc): 2.19585(71.79%),             eye1 loss(Acc): 1.41307(70.27%),             eye2 loss(Acc): 1.54556(67.29%)              weighted loss(Acc): 1.68165(71.51%)
+[Epoch 29-TRAIN] STATS:
+brain loss(Acc): 2.17631(71.40%),             eye1 loss(Acc): 1.46479(70.29%),             eye2 loss(Acc): 1.51605(67.28%)              weighted loss(Acc): 1.66804(71.79%)
+[Epoch 30-TRAIN] STATS:
+brain loss(Acc): 2.18805(71.67%),             eye1 loss(Acc): 1.41124(70.30%),             eye2 loss(Acc): 1.55424(67.55%)              weighted loss(Acc): 1.67117(72.07%)
+[Epoch 31-TRAIN] STATS:
+brain loss(Acc): 2.52132(67.47%),             eye1 loss(Acc): 1.85398(64.46%),             eye2 loss(Acc): 1.64917(65.02%)              weighted loss(Acc): 1.95819(67.99%)
+[Epoch 32-TRAIN] STATS:
+brain loss(Acc): 2.17547(71.67%),             eye1 loss(Acc): 1.43651(69.59%),             eye2 loss(Acc): 1.43139(68.74%)              weighted loss(Acc): 1.65255(71.86%)
+[Epoch 33-TRAIN] STATS:
+brain loss(Acc): 2.37562(70.88%),             eye1 loss(Acc): 1.48048(70.39%),             eye2 loss(Acc): 1.48952(67.15%)              weighted loss(Acc): 1.77434(71.33%)
+[Epoch 34-TRAIN] STATS:
+brain loss(Acc): 2.16659(70.47%),             eye1 loss(Acc): 1.45383(68.24%),             eye2 loss(Acc): 1.50205(68.56%)              weighted loss(Acc): 1.66182(71.51%)
+[Epoch 35-TRAIN] STATS:
+brain loss(Acc): 2.22963(72.03%),             eye1 loss(Acc): 1.46900(69.66%),             eye2 loss(Acc): 1.49516(67.96%)              weighted loss(Acc): 1.69675(72.34%)
+[Epoch 36-TRAIN] STATS:
+brain loss(Acc): 2.30554(71.68%),             eye1 loss(Acc): 1.42389(69.78%),             eye2 loss(Acc): 1.55756(67.24%)              weighted loss(Acc): 1.73937(72.10%)
+[Epoch 37-TRAIN] STATS:
+brain loss(Acc): 2.15301(71.89%),             eye1 loss(Acc): 1.45137(70.69%),             eye2 loss(Acc): 1.44289(68.47%)              weighted loss(Acc): 1.65150(72.67%)
+[Epoch 38-TRAIN] STATS:
+brain loss(Acc): 2.30859(72.30%),             eye1 loss(Acc): 1.55501(69.15%),             eye2 loss(Acc): 1.49787(69.77%)              weighted loss(Acc): 1.75886(72.43%)
+[Epoch 39-TRAIN] STATS:
+brain loss(Acc): 2.00796(73.57%),             eye1 loss(Acc): 1.35574(71.46%),             eye2 loss(Acc): 1.37459(69.65%)              weighted loss(Acc): 1.54573(73.81%)
+[Epoch 40-TRAIN] STATS:
+brain loss(Acc): 2.22500(73.36%),             eye1 loss(Acc): 1.44462(71.16%),             eye2 loss(Acc): 1.43243(69.60%)              weighted loss(Acc): 1.69515(73.61%)
+[Epoch 41-TRAIN] STATS:
+brain loss(Acc): 2.24576(72.70%),             eye1 loss(Acc): 1.51653(69.03%),             eye2 loss(Acc): 1.51103(70.52%)              weighted loss(Acc): 1.72239(72.54%)
+[Epoch 42-TRAIN] STATS:
+brain loss(Acc): 2.22125(72.03%),             eye1 loss(Acc): 1.48715(68.86%),             eye2 loss(Acc): 1.38704(69.72%)              weighted loss(Acc): 1.68477(72.25%)
+[Epoch 43-TRAIN] STATS:
+brain loss(Acc): 2.28682(72.42%),             eye1 loss(Acc): 1.49468(70.35%),             eye2 loss(Acc): 1.47041(69.34%)              weighted loss(Acc): 1.73436(72.64%)
+[Epoch 44-TRAIN] STATS:
+brain loss(Acc): 2.15886(71.84%),             eye1 loss(Acc): 1.46415(69.41%),             eye2 loss(Acc): 1.44869(69.31%)              weighted loss(Acc): 1.66418(72.06%)
+[Epoch 45-TRAIN] STATS:
+brain loss(Acc): 2.23572(73.24%),             eye1 loss(Acc): 1.43971(71.28%),             eye2 loss(Acc): 1.50330(69.94%)              weighted loss(Acc): 1.70749(73.45%)
+[Epoch 46-TRAIN] STATS:
+brain loss(Acc): 2.10143(73.07%),             eye1 loss(Acc): 1.43328(70.64%),             eye2 loss(Acc): 1.52556(69.05%)              weighted loss(Acc): 1.61492(73.29%)
+[Epoch 47-TRAIN] STATS:
+brain loss(Acc): 2.11248(72.72%),             eye1 loss(Acc): 1.40277(70.59%),             eye2 loss(Acc): 1.46381(69.71%)              weighted loss(Acc): 1.61989(73.11%)
+[Epoch 48-TRAIN] STATS:
+brain loss(Acc): 2.06933(73.50%),             eye1 loss(Acc): 1.40822(71.87%),             eye2 loss(Acc): 1.49115(70.62%)              weighted loss(Acc): 1.60835(73.82%)
+[Epoch 49-TRAIN] STATS:
+brain loss(Acc): 2.22527(73.41%),             eye1 loss(Acc): 1.45896(70.51%),             eye2 loss(Acc): 1.50048(69.68%)              weighted loss(Acc): 1.70000(73.73%)
+[Epoch 50-TRAIN] STATS:
+brain loss(Acc): 2.07530(71.72%),             eye1 loss(Acc): 1.50618(70.17%),             eye2 loss(Acc): 1.59091(66.40%)              weighted loss(Acc): 1.64513(71.70%)
+[Epoch 51-TRAIN] STATS:
+brain loss(Acc): 2.11277(73.62%),             eye1 loss(Acc): 1.35354(71.34%),             eye2 loss(Acc): 1.49635(68.54%)              weighted loss(Acc): 1.61251(73.77%)
+[Epoch 52-TRAIN] STATS:
+brain loss(Acc): 2.12693(72.58%),             eye1 loss(Acc): 1.44038(71.12%),             eye2 loss(Acc): 1.56951(68.11%)              weighted loss(Acc): 1.65689(72.69%)
+[Epoch 53-TRAIN] STATS:
+brain loss(Acc): 2.22600(72.79%),             eye1 loss(Acc): 1.48111(70.00%),             eye2 loss(Acc): 1.50583(70.95%)              weighted loss(Acc): 1.71157(73.18%)
+[Epoch 54-TRAIN] STATS:
+brain loss(Acc): 2.04031(73.14%),             eye1 loss(Acc): 1.41726(70.68%),             eye2 loss(Acc): 1.53788(69.18%)              weighted loss(Acc): 1.59469(73.28%)
+[Epoch 55-TRAIN] STATS:
+brain loss(Acc): 2.17712(73.51%),             eye1 loss(Acc): 1.42709(71.10%),             eye2 loss(Acc): 1.56389(69.75%)              weighted loss(Acc): 1.68102(73.61%)
+[Epoch 56-TRAIN] STATS:
+brain loss(Acc): 2.18515(73.05%),             eye1 loss(Acc): 1.45358(70.67%),             eye2 loss(Acc): 1.50496(68.91%)              weighted loss(Acc): 1.68625(73.15%)
+[Epoch 57-TRAIN] STATS:
+brain loss(Acc): 2.09603(71.65%),             eye1 loss(Acc): 1.47119(70.57%),             eye2 loss(Acc): 1.51396(68.42%)              weighted loss(Acc): 1.63770(72.39%)
+[Epoch 58-TRAIN] STATS:
+brain loss(Acc): 2.25831(72.99%),             eye1 loss(Acc): 1.48901(71.34%),             eye2 loss(Acc): 1.60882(67.76%)              weighted loss(Acc): 1.73250(73.16%)
+[Epoch 59-TRAIN] STATS:
+brain loss(Acc): 2.51368(70.86%),             eye1 loss(Acc): 1.44486(69.93%),             eye2 loss(Acc): 1.70377(67.57%)              weighted loss(Acc): 1.87468(71.72%)
+[Epoch 59-TEST] || brain loss(Acc):2.55319(71.81%)
+[Epoch 59-TEST] || eye1 loss(Acc): 1.44093( 70.76%)
+[Epoch 59-TEST] || eye2 loss(Acc): 1.74376( 66.57%)
+[Epoch 59-TEST] || weighted loss(Acc): 1.90184( 71.94%)

@@ -1,0 +1,167 @@
+cpu-bind=MASK - rishon4, task  0  0 [12783]: mask 0x400000004 set
+cpu-bind=MASK - rishon4, task  0  0 [12783]: mask 0x400000004 set
+/home/asheryartsev/Project/eyesWithGans
+2018-09-07 13:51:34.039967: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2018-09-07 13:51:35.299086: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: TITAN Xp major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:0c:00.0
+totalMemory: 11.90GiB freeMemory: 11.74GiB
+2018-09-07 13:51:35.300050: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-09-07 13:51:36.103189: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-09-07 13:51:36.104174: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      0 
+2018-09-07 13:51:36.105140: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   N 
+2018-09-07 13:51:36.106259: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11360 MB memory) -> physical GPU (device: 0, name: TITAN Xp, pci bus id: 0000:0c:00.0, compute capability: 6.1)
+0
+get version: b'92cb42d'
+[imageInputMaker] Training set (50238, 48, 48, 1) (50238, 7)
+[imageInputMaker] Validation set (10763, 48, 48, 1) (10763, 7)
+[imageInputMaker] Test set (10773, 48, 48, 1) (10773, 7)
+
+
+ ########## [STAGE1] TRAINING MODE  ####### 
+
+
+[Epoch 0-TRAIN] ||  eye1 loss(Acc)<validation set>: 28088.09109(16.50%)             || loss_desc_on_eye1 loss<validation set>:24707.42578
+loss_eye1<training set>: 2.00771             || loss_desc_on_eye1<training set>:0.21037
+[Epoch 1-TRAIN] ||  eye1 loss(Acc)<validation set>: 1577.66244(16.57%)             || loss_desc_on_eye1 loss<validation set>:12469.49174
+loss_eye1<training set>: 1.79863             || loss_desc_on_eye1<training set>:0.06413
+[Epoch 2-TRAIN] ||  eye1 loss(Acc)<validation set>: 177.67551(13.25%)             || loss_desc_on_eye1 loss<validation set>:2929.14874
+loss_eye1<training set>: 1.77357             || loss_desc_on_eye1<training set>:0.01643
+[Epoch 3-TRAIN] ||  eye1 loss(Acc)<validation set>: 4.53685(17.07%)             || loss_desc_on_eye1 loss<validation set>:117.43313
+loss_eye1<training set>: 1.75126             || loss_desc_on_eye1<training set>:0.03213
+[Epoch 4-TRAIN] ||  eye1 loss(Acc)<validation set>: 2.08422(21.36%)             || loss_desc_on_eye1 loss<validation set>:0.80710
+loss_eye1<training set>: 1.73289             || loss_desc_on_eye1<training set>:0.00650
+[Epoch 5-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.80796(27.63%)             || loss_desc_on_eye1 loss<validation set>:0.01315
+loss_eye1<training set>: 1.66746             || loss_desc_on_eye1<training set>:0.00343
+[Epoch 6-TRAIN] ||  eye1 loss(Acc)<validation set>: 2.55560(28.60%)             || loss_desc_on_eye1 loss<validation set>:0.00128
+loss_eye1<training set>: 1.53029             || loss_desc_on_eye1<training set>:0.00255
+[Epoch 7-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.84686(34.47%)             || loss_desc_on_eye1 loss<validation set>:0.00035
+loss_eye1<training set>: 1.39941             || loss_desc_on_eye1<training set>:0.00100
+[Epoch 8-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.70522(34.73%)             || loss_desc_on_eye1 loss<validation set>:0.00191
+loss_eye1<training set>: 1.29193             || loss_desc_on_eye1<training set>:0.00159
+[Epoch 9-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.83542(29.24%)             || loss_desc_on_eye1 loss<validation set>:0.00155
+loss_eye1<training set>: 1.23466             || loss_desc_on_eye1<training set>:0.00091
+[Epoch 10-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.50948(41.28%)             || loss_desc_on_eye1 loss<validation set>:0.00125
+loss_eye1<training set>: 1.16228             || loss_desc_on_eye1<training set>:0.00046
+[Epoch 11-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.47085(46.47%)             || loss_desc_on_eye1 loss<validation set>:0.00047
+loss_eye1<training set>: 1.13129             || loss_desc_on_eye1<training set>:0.00185
+[Epoch 12-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.28425(51.72%)             || loss_desc_on_eye1 loss<validation set>:0.00070
+loss_eye1<training set>: 1.10599             || loss_desc_on_eye1<training set>:0.00053
+[Epoch 13-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.28302(53.83%)             || loss_desc_on_eye1 loss<validation set>:0.00007
+loss_eye1<training set>: 1.05469             || loss_desc_on_eye1<training set>:0.00071
+[Epoch 14-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.21851(58.15%)             || loss_desc_on_eye1 loss<validation set>:0.00013
+loss_eye1<training set>: 1.05628             || loss_desc_on_eye1<training set>:0.00141
+[Epoch 15-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.12692(59.91%)             || loss_desc_on_eye1 loss<validation set>:0.00034
+loss_eye1<training set>: 1.00099             || loss_desc_on_eye1<training set>:0.00119
+[Epoch 16-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.06878(61.94%)             || loss_desc_on_eye1 loss<validation set>:0.00071
+loss_eye1<training set>: 0.93883             || loss_desc_on_eye1<training set>:0.00062
+[Epoch 17-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.11062(60.37%)             || loss_desc_on_eye1 loss<validation set>:0.00061
+loss_eye1<training set>: 0.95898             || loss_desc_on_eye1<training set>:0.00089
+[Epoch 18-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.21145(58.23%)             || loss_desc_on_eye1 loss<validation set>:0.00005
+loss_eye1<training set>: 0.83322             || loss_desc_on_eye1<training set>:0.00086
+[Epoch 19-TRAIN] ||  eye1 loss(Acc)<validation set>: 1.14698(60.69%)             || loss_desc_on_eye1 loss<validation set>:0.00157
+loss_eye1<training set>: 0.87995             || loss_desc_on_eye1<training set>:0.00133
+
+
+ ########## [STAGE2] TRAINING MODE  ####### 
+
+
+[Epoch 0-TRAIN] ||  eye1 loss(Acc): 1782.86651(16.28%)             || loss_desc_on_eye1 loss:8.16900
+[Epoch 0-TRAIN] ||  eye2 loss(Acc): 212280.38707(16.59%)             || loss_desc_on_eye2 loss:4267.01233
+[Epoch 1-TRAIN] ||  eye1 loss(Acc): 20.52863(24.79%)             || loss_desc_on_eye1 loss:0.01718
+[Epoch 1-TRAIN] ||  eye2 loss(Acc): 11578.50679(26.33%)             || loss_desc_on_eye2 loss:232.66843
+[Epoch 2-TRAIN] ||  eye1 loss(Acc): 2.23364(53.92%)             || loss_desc_on_eye1 loss:0.00129
+[Epoch 2-TRAIN] ||  eye2 loss(Acc): 295.97144(14.44%)             || loss_desc_on_eye2 loss:9.53225
+[Epoch 3-TRAIN] ||  eye1 loss(Acc): 1.40349(59.69%)             || loss_desc_on_eye1 loss:0.00001
+[Epoch 3-TRAIN] ||  eye2 loss(Acc): 51.89834(20.56%)             || loss_desc_on_eye2 loss:3.54072
+[Epoch 4-TRAIN] ||  eye1 loss(Acc): 1.19639(63.35%)             || loss_desc_on_eye1 loss:0.00069
+[Epoch 4-TRAIN] ||  eye2 loss(Acc): 6.34855(24.90%)             || loss_desc_on_eye2 loss:0.28948
+[Epoch 5-TRAIN] ||  eye1 loss(Acc): 1.11408(64.23%)             || loss_desc_on_eye1 loss:0.00004
+[Epoch 5-TRAIN] ||  eye2 loss(Acc): 2.00721(17.09%)             || loss_desc_on_eye2 loss:0.00270
+[Epoch 6-TRAIN] ||  eye1 loss(Acc): 1.13495(63.01%)             || loss_desc_on_eye1 loss:0.00059
+[Epoch 6-TRAIN] ||  eye2 loss(Acc): 1.96832(29.33%)             || loss_desc_on_eye2 loss:0.00023
+[Epoch 7-TRAIN] ||  eye1 loss(Acc): 1.16751(64.40%)             || loss_desc_on_eye1 loss:0.00116
+[Epoch 7-TRAIN] ||  eye2 loss(Acc): 2.11500(35.46%)             || loss_desc_on_eye2 loss:0.00006
+[Epoch 8-TRAIN] ||  eye1 loss(Acc): 1.12205(63.91%)             || loss_desc_on_eye1 loss:0.00171
+[Epoch 8-TRAIN] ||  eye2 loss(Acc): 1.78273(31.45%)             || loss_desc_on_eye2 loss:0.00266
+[Epoch 9-TRAIN] ||  eye1 loss(Acc): 1.11661(64.89%)             || loss_desc_on_eye1 loss:0.00007
+[Epoch 9-TRAIN] ||  eye2 loss(Acc): 1.54974(40.98%)             || loss_desc_on_eye2 loss:0.00026
+[Epoch 10-TRAIN] ||  eye1 loss(Acc): 1.09353(65.82%)             || loss_desc_on_eye1 loss:0.00109
+[Epoch 10-TRAIN] ||  eye2 loss(Acc): 1.53147(45.80%)             || loss_desc_on_eye2 loss:0.00130
+[Epoch 11-TRAIN] ||  eye1 loss(Acc): 1.10227(65.37%)             || loss_desc_on_eye1 loss:0.00029
+[Epoch 11-TRAIN] ||  eye2 loss(Acc): 1.36792(50.07%)             || loss_desc_on_eye2 loss:0.00002
+[Epoch 12-TRAIN] ||  eye1 loss(Acc): 1.12181(66.44%)             || loss_desc_on_eye1 loss:0.00051
+[Epoch 12-TRAIN] ||  eye2 loss(Acc): 1.37430(51.73%)             || loss_desc_on_eye2 loss:0.00084
+[Epoch 13-TRAIN] ||  eye1 loss(Acc): 1.08408(66.37%)             || loss_desc_on_eye1 loss:0.00150
+[Epoch 13-TRAIN] ||  eye2 loss(Acc): 1.27412(54.01%)             || loss_desc_on_eye2 loss:0.00003
+[Epoch 14-TRAIN] ||  eye1 loss(Acc): 1.12269(65.41%)             || loss_desc_on_eye1 loss:0.00020
+[Epoch 14-TRAIN] ||  eye2 loss(Acc): 1.49919(48.61%)             || loss_desc_on_eye2 loss:0.03828
+[Epoch 15-TRAIN] ||  eye1 loss(Acc): 1.09810(65.11%)             || loss_desc_on_eye1 loss:0.00130
+[Epoch 15-TRAIN] ||  eye2 loss(Acc): 1.24498(57.08%)             || loss_desc_on_eye2 loss:0.00080
+[Epoch 16-TRAIN] ||  eye1 loss(Acc): 1.19991(63.79%)             || loss_desc_on_eye1 loss:0.00021
+[Epoch 16-TRAIN] ||  eye2 loss(Acc): 1.19414(57.78%)             || loss_desc_on_eye2 loss:0.00014
+[Epoch 17-TRAIN] ||  eye1 loss(Acc): 1.09200(65.54%)             || loss_desc_on_eye1 loss:0.00034
+[Epoch 17-TRAIN] ||  eye2 loss(Acc): 1.46462(53.74%)             || loss_desc_on_eye2 loss:0.00115
+[Epoch 18-TRAIN] ||  eye1 loss(Acc): 1.14453(66.66%)             || loss_desc_on_eye1 loss:0.00143
+[Epoch 18-TRAIN] ||  eye2 loss(Acc): 1.28677(55.16%)             || loss_desc_on_eye2 loss:0.01447
+[Epoch 19-TRAIN] ||  eye1 loss(Acc): 1.18997(65.01%)             || loss_desc_on_eye1 loss:0.00024
+[Epoch 19-TRAIN] ||  eye2 loss(Acc): 1.16095(59.62%)             || loss_desc_on_eye2 loss:0.00048
+
+
+
+to_train :
+ [<tf.Variable 'stage3/eye1/conv1/weights:0' shape=(5, 5, 1, 64) dtype=float32_ref>, <tf.Variable 'stage3/eye1/conv1/biases:0' shape=(64,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/batchNorm1/gamma:0' shape=(64,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/batchNorm1/beta:0' shape=(64,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/conv2/weights:0' shape=(3, 3, 64, 64) dtype=float32_ref>, <tf.Variable 'stage3/eye1/conv2/biases:0' shape=(64,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/batchNorm2/gamma:0' shape=(64,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/batchNorm2/beta:0' shape=(64,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/conv3/weights:0' shape=(3, 3, 64, 128) dtype=float32_ref>, <tf.Variable 'stage3/eye1/conv3/biases:0' shape=(128,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/batchNorm3/gamma:0' shape=(128,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/batchNorm3/beta:0' shape=(128,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/conv4/weights:0' shape=(3, 3, 128, 128) dtype=float32_ref>, <tf.Variable 'stage3/eye1/conv4/biases:0' shape=(128,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/batchNorm4/gamma:0' shape=(128,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/batchNorm4/beta:0' shape=(128,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/conv5/weights:0' shape=(3, 3, 128, 256) dtype=float32_ref>, <tf.Variable 'stage3/eye1/conv5/biases:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/batchNorm5/gamma:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/batchNorm5/beta:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/conv6/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>, <tf.Variable 'stage3/eye1/conv6/biases:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/batchNorm6/gamma:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/batchNorm6/beta:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/conv7/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>, <tf.Variable 'stage3/eye1/conv7/biases:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/batchNorm7/gamma:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/batchNorm7/beta:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/conv8/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>, <tf.Variable 'stage3/eye1/conv8/biases:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/batchNorm8/gamma:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/batchNorm8/beta:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/conv9/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>, <tf.Variable 'stage3/eye1/conv9/biases:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/batchNorm9/gamma:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/batchNorm9/beta:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/conv10/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>, <tf.Variable 'stage3/eye1/conv10/biases:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/batchNorm10/gamma:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/batchNorm10/beta:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/dense1/weights:0' shape=(2304, 1024) dtype=float32_ref>, <tf.Variable 'stage3/eye1/dense1/biases:0' shape=(1024,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/batchNorm11/beta:0' shape=(1024,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/batchNorm11/gamma:0' shape=(1024,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/dense2/weights:0' shape=(1024, 1024) dtype=float32_ref>, <tf.Variable 'stage3/eye1/dense2/biases:0' shape=(1024,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/batchNorm12/beta:0' shape=(1024,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/batchNorm12/gamma:0' shape=(1024,) dtype=float32_ref>, <tf.Variable 'stage3/eye1/classify/weights:0' shape=(1024, 7) dtype=float32_ref>, <tf.Variable 'stage3/eye1/classify/biases:0' shape=(7,) dtype=float32_ref>]
+
+
+
+to_train :
+ [<tf.Variable 'stage3/eye2/conv1/weights:0' shape=(5, 5, 1, 64) dtype=float32_ref>, <tf.Variable 'stage3/eye2/conv1/biases:0' shape=(64,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/batchNorm1/gamma:0' shape=(64,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/batchNorm1/beta:0' shape=(64,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/conv2/weights:0' shape=(3, 3, 64, 64) dtype=float32_ref>, <tf.Variable 'stage3/eye2/conv2/biases:0' shape=(64,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/batchNorm2/gamma:0' shape=(64,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/batchNorm2/beta:0' shape=(64,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/conv3/weights:0' shape=(3, 3, 64, 128) dtype=float32_ref>, <tf.Variable 'stage3/eye2/conv3/biases:0' shape=(128,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/batchNorm3/gamma:0' shape=(128,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/batchNorm3/beta:0' shape=(128,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/conv4/weights:0' shape=(3, 3, 128, 128) dtype=float32_ref>, <tf.Variable 'stage3/eye2/conv4/biases:0' shape=(128,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/batchNorm4/gamma:0' shape=(128,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/batchNorm4/beta:0' shape=(128,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/conv5/weights:0' shape=(3, 3, 128, 256) dtype=float32_ref>, <tf.Variable 'stage3/eye2/conv5/biases:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/batchNorm5/gamma:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/batchNorm5/beta:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/conv6/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>, <tf.Variable 'stage3/eye2/conv6/biases:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/batchNorm6/gamma:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/batchNorm6/beta:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/conv7/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>, <tf.Variable 'stage3/eye2/conv7/biases:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/batchNorm7/gamma:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/batchNorm7/beta:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/conv8/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>, <tf.Variable 'stage3/eye2/conv8/biases:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/batchNorm8/gamma:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/batchNorm8/beta:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/conv9/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>, <tf.Variable 'stage3/eye2/conv9/biases:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/batchNorm9/gamma:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/batchNorm9/beta:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/conv10/weights:0' shape=(3, 3, 256, 256) dtype=float32_ref>, <tf.Variable 'stage3/eye2/conv10/biases:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/batchNorm10/gamma:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/batchNorm10/beta:0' shape=(256,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/dense1/weights:0' shape=(2304, 1024) dtype=float32_ref>, <tf.Variable 'stage3/eye2/dense1/biases:0' shape=(1024,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/batchNorm11/beta:0' shape=(1024,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/batchNorm11/gamma:0' shape=(1024,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/dense2/weights:0' shape=(1024, 1024) dtype=float32_ref>, <tf.Variable 'stage3/eye2/dense2/biases:0' shape=(1024,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/batchNorm12/beta:0' shape=(1024,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/batchNorm12/gamma:0' shape=(1024,) dtype=float32_ref>, <tf.Variable 'stage3/eye2/classify/weights:0' shape=(1024, 7) dtype=float32_ref>, <tf.Variable 'stage3/eye2/classify/biases:0' shape=(7,) dtype=float32_ref>]
+
+
+ ########## [STAGE3] TRAINING MODE  ####### 
+
+
+[Epoch 0-TRAIN] STATS:
+brain loss(Acc): 7373.65326(19.33%),             eye1 loss(Acc): 5340.64091(6.61%),             eye2 loss(Acc): 104.41366(30.02%)              weighted loss(Acc): 4454.71372(14.90%)
+[Epoch 1-TRAIN] STATS:
+brain loss(Acc): 124.49066(28.89%),             eye1 loss(Acc): 24.17686(22.65%),             eye2 loss(Acc): 8.60419(35.65%)              weighted loss(Acc): 61.19395(30.47%)
+[Epoch 2-TRAIN] STATS:
+brain loss(Acc): 9.26897(48.75%),             eye1 loss(Acc): 4.28252(45.69%),             eye2 loss(Acc): 3.69977(45.45%)              weighted loss(Acc): 5.83029(50.05%)
+[Epoch 3-TRAIN] STATS:
+brain loss(Acc): 4.71662(54.58%),             eye1 loss(Acc): 2.60053(51.49%),             eye2 loss(Acc): 1.95805(54.54%)              weighted loss(Acc): 3.26273(55.21%)
+[Epoch 4-TRAIN] STATS:
+brain loss(Acc): 3.59267(54.29%),             eye1 loss(Acc): 2.41313(52.66%),             eye2 loss(Acc): 1.93750(49.07%)              weighted loss(Acc): 2.60918(55.19%)
+[Epoch 5-TRAIN] STATS:
+brain loss(Acc): 2.98030(58.06%),             eye1 loss(Acc): 2.09202(53.79%),             eye2 loss(Acc): 1.78803(55.10%)              weighted loss(Acc): 2.21760(59.08%)
+[Epoch 6-TRAIN] STATS:
+brain loss(Acc): 2.43575(60.64%),             eye1 loss(Acc): 1.86117(56.94%),             eye2 loss(Acc): 1.61994(57.47%)              weighted loss(Acc): 1.86019(61.23%)
+[Epoch 7-TRAIN] STATS:
+brain loss(Acc): 2.60943(59.12%),             eye1 loss(Acc): 1.75402(59.90%),             eye2 loss(Acc): 2.32868(49.15%)              weighted loss(Acc): 2.04149(59.50%)
+[Epoch 8-TRAIN] STATS:
+brain loss(Acc): 2.15022(64.97%),             eye1 loss(Acc): 1.56752(64.70%),             eye2 loss(Acc): 1.59978(56.55%)              weighted loss(Acc): 1.68358(65.16%)
+[Epoch 9-TRAIN] STATS:
+brain loss(Acc): 1.97300(65.81%),             eye1 loss(Acc): 1.52792(64.23%),             eye2 loss(Acc): 1.54065(57.59%)              weighted loss(Acc): 1.57028(66.25%)
+[Epoch 10-TRAIN] STATS:
+brain loss(Acc): 2.37254(60.90%),             eye1 loss(Acc): 1.80978(60.65%),             eye2 loss(Acc): 1.69248(53.82%)              weighted loss(Acc): 1.85959(61.94%)
+[Epoch 11-TRAIN] STATS:
+brain loss(Acc): 2.32207(61.94%),             eye1 loss(Acc): 1.87348(59.32%),             eye2 loss(Acc): 1.65681(55.46%)              weighted loss(Acc): 1.81614(62.63%)
+[Epoch 12-TRAIN] STATS:
+brain loss(Acc): 2.37660(64.72%),             eye1 loss(Acc): 1.70426(63.59%),             eye2 loss(Acc): 1.46733(60.67%)              weighted loss(Acc): 1.83690(65.32%)
+[Epoch 13-TRAIN] STATS:
+brain loss(Acc): 2.42577(62.88%),             eye1 loss(Acc): 1.81699(62.29%),             eye2 loss(Acc): 1.77778(55.55%)              weighted loss(Acc): 1.92081(63.11%)
+[Epoch 14-TRAIN] STATS:
+brain loss(Acc): 2.53481(61.82%),             eye1 loss(Acc): 1.87988(61.21%),             eye2 loss(Acc): 1.85384(57.25%)              weighted loss(Acc): 2.03451(62.34%)
+[Epoch 15-TRAIN] STATS:
+brain loss(Acc): 2.61811(61.98%),             eye1 loss(Acc): 2.07235(60.28%),             eye2 loss(Acc): 1.76921(57.98%)              weighted loss(Acc): 2.09042(62.41%)
+[Epoch 16-TRAIN] STATS:
+brain loss(Acc): 2.37158(63.88%),             eye1 loss(Acc): 1.88488(61.34%),             eye2 loss(Acc): 1.67100(59.37%)              weighted loss(Acc): 1.89486(64.06%)
+[Epoch 17-TRAIN] STATS:
+brain loss(Acc): 2.24603(64.37%),             eye1 loss(Acc): 1.68455(62.96%),             eye2 loss(Acc): 1.30928(62.84%)              weighted loss(Acc): 1.72808(65.43%)
+[Epoch 18-TRAIN] STATS:
+brain loss(Acc): 2.27616(65.19%),             eye1 loss(Acc): 1.79340(63.38%),             eye2 loss(Acc): 1.34671(63.02%)              weighted loss(Acc): 1.77885(65.59%)
+[Epoch 19-TRAIN] STATS:
+brain loss(Acc): 2.17619(66.79%),             eye1 loss(Acc): 1.68689(65.00%),             eye2 loss(Acc): 1.36765(63.87%)              weighted loss(Acc): 1.72019(67.06%)
+[Epoch 19-TEST] || brain loss(Acc):2.16645(66.62%)
+[Epoch 19-TEST] || eye1 loss(Acc): 1.69095( 64.57%)
+[Epoch 19-TEST] || eye2 loss(Acc): 1.34958( 62.96%)
+[Epoch 19-TEST] || weighted loss(Acc): 1.71115( 66.72%)
